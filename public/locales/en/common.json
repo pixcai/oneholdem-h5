@@ -4,5 +4,12 @@
         "lobby": "Lobby",
         "friendstable": "Friends Table",
         "me": "Me"
+    },
+    "tourney": {
+        "tab": {
+            "all": "All",
+            "following": "Following",
+            "live": "Live"
+        }
     }
 }

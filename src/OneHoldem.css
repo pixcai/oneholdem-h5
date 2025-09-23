@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+html,
+body,
+#root {
+    @apply h-screen;
+}
+
+#root {
+    @apply flex flex-col flex-1;
+}

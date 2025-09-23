@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router";
 import RootLayout from "@/layouts/RootLayout";
-import Tourney from "./routes/tourney";
-import Lobby from "./routes/lobby";
-import FriendsTable from "./routes/friendstable";
-import Me from "./routes/me";
+import Tourney from "@/routes/tourney";
+import Lobby from "@/routes/lobby";
+import FriendsTable from "@/routes/friendstable";
+import Me from "@/routes/me";
 
 export const router = createBrowserRouter([
     {

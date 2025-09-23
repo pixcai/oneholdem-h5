@@ -4,5 +4,12 @@
         "lobby": "大厅",
         "friendstable": "好友桌",
         "me": "我的"
+    },
+    "tourney": {
+        "tab": {
+            "all": "全部",
+            "following": "关注",
+            "live": "进行中"
+        }
     }
 }

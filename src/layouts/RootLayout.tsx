@@ -11,11 +11,11 @@ export default function RootLayout() {
             <div className="sticky w-screen top-0 z-[1000]">
                 <NavBar />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col flex-1">
                 {isNavigating && <div>Loading</div>}
                 <Outlet />
             </div>
-            <div className="fixed w-screen bottom-0 z-[1000]">
+            <div className="w-screen bottom-0 z-[1000]">
                 <TabBar />
             </div>
         </>
