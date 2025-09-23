@@ -1,5 +1,5 @@
 import { Outlet, useNavigation } from "react-router";
-import { NavBar } from "@/components/NavBar";
+import { Main as NavBar } from "@/components/NavBar";
 import { TabBar } from "@/components/TabBar";
 
 export default function RootLayout() {

@@ -1,10 +1,5 @@
 // 顶部标题栏默认标题
 export const TITLE = "One Holdem";
 
-// 底部导航栏类别
-export const enum TabBarTabs {
-    Tourney,
-    Lobby,
-    FriendsTable,
-    Me,
-}
+export const NAVBAR_HEIGHT = 64;
+export const TABBAR_HEIGHT = 56;
