@@ -7,13 +7,13 @@ import SvgIcon from "@mui/material/SvgIcon";
 
 import IconTourney from "@/assets/icons/tourney.svg?react";
 import IconLobby from "@/assets/icons/lobby.svg?react";
-import IconFriendsTable from "@/assets/icons/friendstable.svg?react";
+import IconTables from "@/assets/icons/tables.svg?react";
 import IconMe from "@/assets/icons/me.svg?react";
 
 export enum BottomBarAction {
     Tourney,
     Lobby,
-    FriendTable,
+    Tables,
     Me,
 }
 
@@ -31,10 +31,10 @@ const actions = [
         icon: IconLobby,
     },
     {
-        key: BottomBarAction.FriendTable,
-        label: "bottombar.friendtable",
-        link: "/friendstable",
-        icon: IconFriendsTable,
+        key: BottomBarAction.Tables,
+        label: "bottombar.tables",
+        link: "/tables",
+        icon: IconTables,
     },
     {
         key: BottomBarAction.Me,

@@ -2,7 +2,7 @@
     "bottombar": {
         "tourney": "锦标赛",
         "lobby": "大厅",
-        "friendtable": "好友桌",
+        "tables": "好友桌",
         "me": "我的"
     },
     "tourney": {
