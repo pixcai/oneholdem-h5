@@ -20,8 +20,12 @@ const languages = [
     { code: "en", text: "English" },
 ];
 
+export interface MainProps {
+    showNotification?: boolean;
+}
+
 // 主导航栏(一级导航栏)
-export const Main = () => {
+export const Main = ({ showNotification = true }: MainProps) => {
     const [languagesAnchorEl, setLanguagesAnchorEl] =
         useState<HTMLElement | null>(null);
     const languagesMenuId = useId();
@@ -54,16 +58,18 @@ export const Main = () => {
                     >
                         <SvgIcon component={IconLanguage} />
                     </IconButton>
-                    <IconButton aria-label="notification">
-                        <Badge
-                            badgeContent={1}
-                            color="error"
-                            variant="dot"
-                            invisible={false}
-                        >
-                            <SvgIcon component={IconNotification} />
-                        </Badge>
-                    </IconButton>
+                    {showNotification && (
+                        <IconButton aria-label="notification">
+                            <Badge
+                                badgeContent={1}
+                                color="error"
+                                variant="dot"
+                                invisible={false}
+                            >
+                                <SvgIcon component={IconNotification} />
+                            </Badge>
+                        </IconButton>
+                    )}
                 </Box>
             </Toolbar>
             <Menu

@@ -1,4 +1,10 @@
 {
+    "login": {
+        "title": "登录",
+        "with_google": "使用Google登录",
+        "with_apple": "使用Apple登录",
+        "with_wallet": "连接已有钱包"
+    },
     "bottombar": {
         "tourney": "锦标赛",
         "lobby": "大厅",

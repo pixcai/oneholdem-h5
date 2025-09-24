@@ -1,4 +1,10 @@
 {
+    "login": {
+        "title": "Login",
+        "with_google": "Sign in with Google",
+        "with_apple": "Sign in with Apple",
+        "with_wallet": "Connect existing wallet"
+    },
     "bottombar": {
         "tourney": "Tourney",
         "lobby": "Lobby",
