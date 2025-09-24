@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -24,7 +24,7 @@ const languages = [
 export const Main = () => {
     const [languagesAnchorEl, setLanguagesAnchorEl] =
         useState<HTMLElement | null>(null);
-    const languagesMenuId = "app-languages-menu";
+    const languagesMenuId = useId();
     const onLanguageChange = (language: string) => {
         i18n.changeLanguage(language);
         setLanguagesAnchorEl(null);
@@ -54,7 +54,7 @@ export const Main = () => {
                     >
                         <SvgIcon component={IconLanguage} />
                     </IconButton>
-                    <IconButton>
+                    <IconButton aria-label="notification">
                         <Badge
                             badgeContent={1}
                             color="error"

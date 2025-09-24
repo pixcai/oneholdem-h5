@@ -24,6 +24,7 @@ export const theme = createTheme({
             styleOverrides: {
                 root: {
                     backgroundColor: "#F6F6F6",
+                    justifyContent: "space-between",
                 },
             },
         },
