@@ -1,7 +1,8 @@
+import path from "node:path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import path from "node:path";
+import svgr from "vite-plugin-svgr";
 
 const phasermsg = () => {
     return {
@@ -22,7 +23,12 @@ const phasermsg = () => {
 
 export default defineConfig({
     base: "./",
-    plugins: [react(), tailwindcss(), phasermsg()],
+    plugins: [
+        svgr({ exportAsDefault: true }),
+        react(),
+        tailwindcss(),
+        phasermsg(),
+    ],
     logLevel: "warning",
     resolve: {
         alias: {

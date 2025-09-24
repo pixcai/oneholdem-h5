@@ -1,6 +1,6 @@
 import { Outlet, useNavigation } from "react-router";
 import { Main as NavBar } from "@/components/NavBar";
-import { TabBar } from "@/components/TabBar";
+import BottomBar from "@/components/BottomBar";
 
 export default function RootLayout() {
     const navigation = useNavigation();
@@ -8,16 +8,12 @@ export default function RootLayout() {
 
     return (
         <>
-            <div className="sticky w-screen top-0 z-[1000]">
-                <NavBar />
-            </div>
-            <div className="flex flex-col flex-1">
+            <NavBar />
+            <div className="flex flex-col flex-1 overflow-y-scroll">
                 {isNavigating && <div>Loading</div>}
                 <Outlet />
             </div>
-            <div className="w-screen bottom-0 z-[1000]">
-                <TabBar />
-            </div>
+            <BottomBar />
         </>
     );
 }
