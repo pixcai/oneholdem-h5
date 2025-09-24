@@ -13,7 +13,7 @@ import IconMe from "@/assets/icons/me.svg?react";
 export enum BottomBarAction {
     Tourney,
     Lobby,
-    FriendsTable,
+    FriendTable,
     Me,
 }
 
@@ -31,8 +31,8 @@ const actions = [
         icon: IconLobby,
     },
     {
-        key: BottomBarAction.FriendsTable,
-        label: "bottombar.friendstable",
+        key: BottomBarAction.FriendTable,
+        label: "bottombar.friendtable",
         link: "/friendstable",
         icon: IconFriendsTable,
     },

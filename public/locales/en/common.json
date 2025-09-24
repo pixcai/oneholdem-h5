@@ -2,7 +2,7 @@
     "bottombar": {
         "tourney": "Tourney",
         "lobby": "Lobby",
-        "friendstable": "Friends Table",
+        "friendtable": "Table",
         "me": "Me"
     },
     "tourney": {
